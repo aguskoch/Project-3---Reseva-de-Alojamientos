@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles.css";
+import Filters from "./Filters";
+import Header from "./Header"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      filters: {
+        dateTo: "",
+        dateFrom: "",
+        country: "",
+        price: "",
+        size: "",
+        wrongDates: false
+      }
+    }
+    this.handleFilters = this.handleFilters.bind(this)
+  }
+
+  handleFilters(filtersState) {
+    this.setState({
+      filters: filtersState
+    })
+  }
+
+  resetFilters(){
+    this.setState({
+      filters: {
+        dateTo: "",
+        dateFrom: "",
+        country: "",
+        price: "",
+        size: ""
+      }
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <Header filters={this.state.filters}/>
+        <Filters filters={this.state.filters} onFilterChange={this.handleFilters} resetFilters={this.resetFilters}/>
+      </div>
+    )
+  }
+
+
 }
-
-export default App;

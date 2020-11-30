@@ -1,0 +1,65 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #e76f51;
+  border: 1px solid #e76f51;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.btn-primary:hover {
+  background: #054a91;
+}
+
+.fa-dollar-sign {
+  background: #e76f51;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  color: #ffff;
+}
+
+.price {
+  border-radius: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  padding: 1em;
+  margin: 0.2em;
+}
+
+.filters{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input-group{
+  padding: 1em;
+  height: auto;
+  width: auto;
+}
+
+.form-group{
+  display: flex;
+}
+
+.p{
+  text-align: center;
+}
+
+
+.wrongDates{
+  color: red;
+  padding-top:2em;
+  text-align: center;
+}
