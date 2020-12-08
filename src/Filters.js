@@ -156,7 +156,7 @@ class Filter extends React.Component {
             </select>
           </div>
           <div className="input-group">
-            <button class="form-control" onClick={this.props.resetFilters}>
+            <button class="form-control resetFilters" onClick={this.props.resetFilters}>
               Resetear Filtros
             </button>
           </div>
@@ -168,6 +168,7 @@ class Filter extends React.Component {
           value={this.state.countrySearch}
           onChange={this.updateSearch.bind(this)}
         /> */}
+
           {this.props.filters.dateFrom > this.props.filters.dateTo && this.props.filters.dateFrom != "" && this.props.filters.dateTo != "" ?
               <div>
                 <h1  className="display-4 wrongDates" > Fechas incorrectas! </h1>

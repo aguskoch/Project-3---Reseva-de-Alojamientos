@@ -4,8 +4,8 @@
 }
 
 .btn-primary {
-  background: #e76f51;
-  border: 1px solid #e76f51;
+  background: #028474;
+  border: 1px solid #028474;
   text-align: center;
   margin-top: 1em;
 }
@@ -15,7 +15,7 @@
 }
 
 .fa-dollar-sign {
-  background: #e76f51;
+  background: #028474;
   padding: 0.2em 0.2em 0.2em 0.2em;
   color: #ffff;
 }
@@ -33,7 +33,14 @@
 
 .card {
   padding: 1em;
-  margin: 0.2em;
+  margin: 0.4em;
+  border-radius: 10px;
+}
+
+.card:hover{
+  -webkit-box-shadow: 2px 3px 26px 0px #AAAAAA; 
+  box-shadow: 2px 3px 26px 0px #AAAAAA;
+  transition: box-shadow 0.5s ease-in-out
 }
 
 .filters{
@@ -61,5 +68,40 @@
 .wrongDates{
   color: red;
   padding-top:2em;
-  text-align: center;
+  text-align: center
 }
+
+.jumbotron{
+  background: #dff3f0;
+  height: 20em;
+}
+
+.title{
+  color: #028474;
+  font-weight: bolder;
+  padding-left: 0.5em;
+}
+
+.fa-globe-americas{
+  color: #028474
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+}
+
+.resetFilters{
+  background: #028474;
+  border: 1px solid #028474;
+  border-radius: 20px;
+  color: #ffffff
+}
+
+.resetFilters:hover{
+  background: #027466;
+  border: 1px solid #027466;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
