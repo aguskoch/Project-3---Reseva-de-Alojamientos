@@ -5,6 +5,7 @@
 const today = new Date();
 const hotelsData = [
   {
+    id: 1,
     slug: "la-bamba-de-areco",
     name: "La Bamba de Areco",
     photo: "../images/la-bamba-de-areco.jpg",
@@ -18,6 +19,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id:2,
     slug: "sainte-jeanne",
     name: "Sainte Jeanne Boutique & Spa",
     photo: "../images/sainte-jeanne.jpg",
@@ -31,6 +33,7 @@ const hotelsData = [
     price: 2
   },
   {
+    id: 3,
     slug: "entre-cielos",
     name: "Entre Cielos",
     photo: "../images/entre-cielos.jpg",
@@ -44,6 +47,7 @@ const hotelsData = [
     price: 4
   },
   {
+    id: 4,
     slug: "huacalera",
     name: "Hotel Huacalera",
     photo: "../images/huacalera.jpg",
@@ -57,6 +61,7 @@ const hotelsData = [
     price: 1
   },
   {
+    id: 5,
     slug: "merced-del-alto",
     name: "La Merced del Alto",
     photo: "../images/merced-del-alto.jpg",
@@ -70,6 +75,7 @@ const hotelsData = [
     price: 2
   },
   {
+    id: 6,
     slug: "azur-real",
     name: "Azur Real Hotel",
     photo: "../images/azur-real.jpg",
@@ -83,6 +89,7 @@ const hotelsData = [
     price: 1
   },
   {
+    id: 1,
     slug: "rincon-del-socorro",
     name: "Rincón del Socorro",
     photo: "../images/rincon-del-socorro.jpg",

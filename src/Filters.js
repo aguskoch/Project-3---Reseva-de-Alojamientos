@@ -2,19 +2,11 @@ import React from "react";
 import Card from "./Card.js";
 import "./styles.css";
 import WholeData from "./data/data";
-import IncorrectDates from "./IncorrectDates"
 
 
 class Filter extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   dateTo: this.today.valueOf(),
-    //   dateFrom: this.today.valueOf(),
-    //   country: "",
-    //   price: "",
-    //   size: ""
-    // }
     this.updateState = this.updateState.bind(this)
   }
 
@@ -73,13 +65,13 @@ class Filter extends React.Component {
         <form className="filters">
           <div className="input-group">
             <div className="input-group-prepend">
-              <span class="input-group-text" id="inputGroupPrepend2">
-                <i class="fas fa-sign-in-alt"></i>
+              <span className="input-group-text" id="inputGroupPrepend2">
+                <i className="fas fa-sign-in-alt"></i>
               </span>
             </div>
             <input
               type="date"
-              class="form-control"
+              className="form-control"
               id="exampleFormControlSelect1"
               name="dateFrom"
               value={this.props.filters.dateFrom}
@@ -87,13 +79,13 @@ class Filter extends React.Component {
           </div>
           <div className="input-group dateTo">
             <div className="input-group-prepend">
-              <span class="input-group-text" id="inputGroupPrepend2">
-                <i class="fas fa-sign-out-alt"></i>
+              <span className="input-group-text" id="inputGroupPrepend2">
+                <i className="fas fa-sign-out-alt"></i>
               </span>
             </div>
             <input
               type="date"
-              class="form-control"
+              className="form-control"
               id="exampleFormControlSelect1"
               name="dateTo"
               value={this.props.filters.dateTo}
@@ -101,7 +93,7 @@ class Filter extends React.Component {
           </div>
           <div className="input-group">
             <select
-              class="form-control"
+              className="form-control"
               id="exampleFormControlSelect1"
               value={this.props.filters.country}
               onChange={this.updateState}
@@ -112,24 +104,11 @@ class Filter extends React.Component {
               <option value="Brasil"> Brasil </option>
               <option value="Chile"> Chile </option>
               <option value="Uruguay"> Uruguay </option>
-              {/* {WholeData.map(item => (
-                <option 
-                value={this.state.countrySearch}
-                onChange={this.updateSearch.bind(this)}
-                >
-                  {item.country}
-                </option>
-              ))} */}
             </select>
           </div>
           <div className="input-group">
-            {/* <div className="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupPrepend2">
-                            <i class="fas fa-bed"></i>
-                        </span>
-                    </div> */}
             <select
-              class="form-control"
+              className="form-control"
               id="exampleFormControlSelect1"
               value={this.props.filters.size}
               name="size"
@@ -142,7 +121,7 @@ class Filter extends React.Component {
             </select>
           </div>
           <div className="input-group">
-            <select class="form-control"
+            <select className="form-control"
               id="exampleFormControlSelect1"
               value={this.props.filters.price}
               name="price"
@@ -156,18 +135,14 @@ class Filter extends React.Component {
             </select>
           </div>
           <div className="input-group">
-            <button class="form-control resetFilters" onClick={this.props.resetFilters}>
+            <button className="form-control resetFilters" onClick={this.props.resetFilters}>
               Resetear Filtros
             </button>
           </div>
 
 
         </form>
-        {/* <input
-          type="dropdown"
-          value={this.state.countrySearch}
-          onChange={this.updateSearch.bind(this)}
-        /> */}
+
 
           {this.props.filters.dateFrom > this.props.filters.dateTo && this.props.filters.dateFrom != "" && this.props.filters.dateTo != "" ?
               <div>
