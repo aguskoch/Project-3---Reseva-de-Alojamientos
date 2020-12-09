@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Card(props) {
+
   return (
     <div className="card" style={{ width: "25em" }} key={props.slug}>
       <img className="card-img-top" src={props.photo} alt={props.name}/>

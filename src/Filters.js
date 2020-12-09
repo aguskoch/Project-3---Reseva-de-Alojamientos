@@ -4,17 +4,17 @@ import "./styles.css";
 import WholeData from "./data/data";
 
 
-class Filter extends React.Component {
+class Filters extends React.Component {
   constructor(props) {
     super(props);
     this.updateState = this.updateState.bind(this)
   }
 
 
-
   updateState(event) {
     let filtersState = this.props.filters
-    filtersState[event.target.name] = event.target.value
+    const {name, value} = event.target
+    filtersState[name] = value
 
     this.props.onFilterChange(filtersState)
 
@@ -142,8 +142,6 @@ class Filter extends React.Component {
 
 
         </form>
-
-
           {this.props.filters.dateFrom > this.props.filters.dateTo && this.props.filters.dateFrom != "" && this.props.filters.dateTo != "" ?
               <div>
                 <h1  className="display-4 wrongDates" > Fechas incorrectas! </h1>
@@ -163,4 +161,4 @@ class Filter extends React.Component {
   }
 }
 
-export default Filter;
+export default Filters;
