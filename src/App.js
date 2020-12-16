@@ -18,6 +18,7 @@ export default class App extends React.Component {
       }
     }
     this.handleFilters = this.handleFilters.bind(this)
+    this.resetFilters = this.resetFilters.bind(this)
   }
 
   handleFilters(filtersState) {
