@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Project-3---Reserva-de-Alojamientos/static/css/main.15dd6337.chunk.css",
+    "main.js": "/Project-3---Reserva-de-Alojamientos/static/js/main.bf04c382.chunk.js",
+    "main.js.map": "/Project-3---Reserva-de-Alojamientos/static/js/main.bf04c382.chunk.js.map",
+    "runtime-main.js": "/Project-3---Reserva-de-Alojamientos/static/js/runtime-main.e025e99d.js",
+    "runtime-main.js.map": "/Project-3---Reserva-de-Alojamientos/static/js/runtime-main.e025e99d.js.map",
+    "static/js/2.64129a07.chunk.js": "/Project-3---Reserva-de-Alojamientos/static/js/2.64129a07.chunk.js",
+    "static/js/2.64129a07.chunk.js.map": "/Project-3---Reserva-de-Alojamientos/static/js/2.64129a07.chunk.js.map",
+    "index.html": "/Project-3---Reserva-de-Alojamientos/index.html",
+    "precache-manifest.0ac49c0e4702d6d2574e4083f675d0a9.js": "/Project-3---Reserva-de-Alojamientos/precache-manifest.0ac49c0e4702d6d2574e4083f675d0a9.js",
+    "service-worker.js": "/Project-3---Reserva-de-Alojamientos/service-worker.js",
+    "static/css/main.15dd6337.chunk.css.map": "/Project-3---Reserva-de-Alojamientos/static/css/main.15dd6337.chunk.css.map",
+    "static/js/2.64129a07.chunk.js.LICENSE.txt": "/Project-3---Reserva-de-Alojamientos/static/js/2.64129a07.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e025e99d.js",
+    "static/js/2.64129a07.chunk.js",
+    "static/css/main.15dd6337.chunk.css",
+    "static/js/main.bf04c382.chunk.js"
+  ]
+}
