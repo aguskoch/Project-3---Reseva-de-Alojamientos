@@ -33,14 +33,14 @@ class Filters extends React.Component {
   }
 
   price(info) {
-    if (this.props.filters.price == "1") {
-      return info.price == 1
-    } else if (this.props.filters.price == "2") {
-      return info.price == 2
-    } else if (this.props.filters.price == "3") {
-      return info.price == 3
-    } else if (this.props.filters.price == "4") {
-      return info.price == 4
+    if (this.props.filters.price === "1") {
+      return info.price === 1
+    } else if (this.props.filters.price === "2") {
+      return info.price === 2
+    } else if (this.props.filters.price === "3") {
+      return info.price === 3
+    } else if (this.props.filters.price === "4") {
+      return info.price === 4
     } else {
       return true
     }
@@ -49,7 +49,7 @@ class Filters extends React.Component {
   date(info) {
     const dateTo = new Date(this.props.filters.dateTo).getTime()
     const dateFrom = new Date(this.props.filters.dateFrom).getTime()
-    if (this.props.filters.dateFrom == "" || this.props.filters.dateTo == "") {
+    if (this.props.filters.dateFrom === "" || this.props.filters.dateTo === "") {
       return true
     }
     return dateFrom <= info.availabilityFrom && dateTo <= info.availabilityTo
@@ -142,13 +142,13 @@ class Filters extends React.Component {
 
 
         </form>
-          {this.props.filters.dateFrom > this.props.filters.dateTo && this.props.filters.dateFrom != "" && this.props.filters.dateTo != "" ?
+          {this.props.filters.dateFrom > this.props.filters.dateTo && this.props.filters.dateFrom !== "" && this.props.filters.dateTo !== "" ?
               <div>
                 <h1  className="display-4 wrongDates" > Fechas incorrectas! </h1>
                 <p className="lead p wrongDates"> No puede seleccionarse una fecha de salida anterior a la fecha de entrada. Intente nuevamente. </p>
               </div> : 
               <div className="cards">
-                {filteredInfo != "" ? filteredInfo.map((data, index) => {
+                {filteredInfo.length !== 0 ? filteredInfo.map((data, index) => {
                   return <Card key={index} {...data} />;
                 }) :
                   <div>
